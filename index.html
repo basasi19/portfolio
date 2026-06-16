@@ -4,82 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuma Saito Portfolio</title>
+  <meta name="description" content="動画制作・映像編集・AI映像制作を行う齋藤のポートフォリオサイトです。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <p class="label">Portfolio Site Test</p>
-      <h1>齋藤のポートフォリオサイト</h1>
-      <p class="lead">
-        動画制作・編集・AI映像制作などの実績を掲載するための仮サイトです。
-      </p>
-      <a class="button" href="#contact">お問い合わせへ</a>
+    <div class="header-inner">
+      <a class="site-title" href="#">Yuma Saito</a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#profile">プロフィール</a>
+        <a href="#works">制作実績</a>
+        <a href="#price">料金</a>
+        <a href="#contact">問い合わせ</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <section class="hero">
+      <div class="hero-visual">
+        <div class="hero-copy">
+          <p class="hero-label">Video / Motion / AI Creative</p>
+          <h1>絵を動かそう、<br />心を動かそう。</h1>
+          <p>教材動画・販促動画・AI映像制作など、目的に合わせた映像表現をお手伝いします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section profile-section">
+      <div class="container profile-grid">
+        <div class="profile-text">
+          <p class="section-label">Profile</p>
+          <h2>プロフィール</h2>
+          <p>動画クリエイターとして、企業向けの動画編集、教材動画、販促動画、モーショングラフィックスなどを制作しています。</p>
+          <p>After EffectsやPremiere Proを使用した編集に加え、近年はAI画像・AI動画を活用した映像表現にも取り組んでいます。</p>
+          <p>見る人に伝わりやすく、依頼者の目的に寄り添った映像づくりを大切にしています。</p>
+        </div>
+        <div class="profile-photo" aria-label="プロフィール写真の仮スペース">
+          <span>Photo</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section works-section">
       <div class="container">
-        <h2>実績コンテンツ</h2>
+        <p class="section-label">Works</p>
+        <h2>制作実績</h2>
         <div class="cards">
           <article class="card">
+            <span class="card-number">01</span>
             <h3>教材動画制作</h3>
-            <p>教育コンテンツ向けの動画編集・構成・演出。</p>
+            <p>教育コンテンツ向けの構成・編集・演出。内容を分かりやすく整理し、学習しやすい動画に仕上げます。</p>
           </article>
           <article class="card">
-            <h3>販促動画</h3>
-            <p>商品紹介やSNS展開を想定した短尺動画制作。</p>
+            <span class="card-number">02</span>
+            <h3>販促・SNS動画</h3>
+            <p>商品紹介やSNS展開を想定した短尺動画を制作。目的や媒体に合わせて見せ方を調整します。</p>
           </article>
           <article class="card">
+            <span class="card-number">03</span>
             <h3>AI映像制作</h3>
-            <p>AI画像・AI動画を活用した映像表現の検証・制作。</p>
+            <p>AI画像・AI動画を活用した映像表現、短編アニメーション、ビジュアル制作の検証・制作に対応します。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
+    <section id="price" class="section price-section">
+      <div class="container narrow">
+        <p class="section-label">Price</p>
         <h2>料金目安</h2>
-        <table>
-          <tr>
-            <th>内容</th>
-            <th>料金</th>
-          </tr>
-          <tr>
-            <td>ショート動画編集</td>
-            <td>15,000円〜</td>
-          </tr>
-          <tr>
-            <td>販促・SNS動画</td>
-            <td>30,000円〜</td>
-          </tr>
-          <tr>
-            <td>教材動画・長尺編集</td>
-            <td>50,000円〜</td>
-          </tr>
-        </table>
-        <p class="note">※内容・尺・素材状況により変動します。</p>
+        <div class="price-table-wrap">
+          <table>
+            <tr><th>内容</th><th>料金目安</th></tr>
+            <tr><td>ショート動画編集</td><td>15,000円〜</td></tr>
+            <tr><td>販促・SNS動画</td><td>30,000円〜</td></tr>
+            <tr><td>教材動画・長尺編集</td><td>50,000円〜</td></tr>
+            <tr><td>AI映像制作</td><td>内容によりご相談</td></tr>
+          </table>
+        </div>
+        <p class="note">※ご依頼内容・尺・素材量・修正回数によって変動します。内容が固まっていない段階でも、お気軽にご相談ください。</p>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
+    <section id="contact" class="section contact-section">
+      <div class="container narrow">
+        <p class="section-label">Contact</p>
         <h2>お問い合わせ</h2>
-        <p>
-          ここには後ほどGoogleフォームやお問い合わせフォームへのリンクを設置します。
-        </p>
-        <a class="button" href="https://forms.google.com" target="_blank" rel="noopener">
-          仮のお問い合わせボタン
-        </a>
+        <p>制作のご相談、お見積もり、実績に関するお問い合わせなどは、下記フォームよりご連絡ください。</p>
+        <a class="button" href="https://forms.google.com" target="_blank" rel="noopener">お問い合わせフォームへ</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>&copy; 2026 Yuma Saito</small>
+    <div class="container footer-inner">
+      <small>&copy; 2026 Yuma Saito Portfolio</small>
+      <a href="#">Back to top</a>
     </div>
   </footer>
 
