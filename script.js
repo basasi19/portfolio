@@ -1,10 +1,6 @@
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const targetId = link.getAttribute("href");
-    if (targetId === "#") return;
-    const target = document.querySelector(targetId);
-    if (!target) return;
-    event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-});
+document.querySelectorAll('a[href^="#"]').forEach((link)=>{link.addEventListener("click",(event)=>{const targetId=link.getAttribute("href");if(targetId==="#")return;const target=document.querySelector(targetId);if(!target)return;event.preventDefault();target.scrollIntoView({behavior:"smooth",block:"start"})})});
+const modal=document.getElementById("videoModal");const modalVideo=document.getElementById("modalVideo");const modalTitle=document.getElementById("modalTitle");const closeButton=document.querySelector(".modal-close");
+function openVideo(videoSrc,title){modal.classList.add("is-open");modal.setAttribute("aria-hidden","false");modalTitle.textContent=title||"参考動画";modalVideo.innerHTML="";const source=document.createElement("source");source.src=videoSrc;source.type="video/mp4";modalVideo.appendChild(source);modalVideo.load();modalVideo.play().catch(()=>{})}
+function closeVideo(){modal.classList.remove("is-open");modal.setAttribute("aria-hidden","true");modalVideo.pause();modalVideo.removeAttribute("src");modalVideo.innerHTML="";modalVideo.load()}
+document.querySelectorAll(".thumb-button").forEach((button)=>{button.addEventListener("click",()=>{openVideo(button.dataset.video,button.dataset.title)})});
+closeButton.addEventListener("click",closeVideo);modal.addEventListener("click",(event)=>{if(event.target.dataset.close==="true"){closeVideo()}});document.addEventListener("keydown",(event)=>{if(event.key==="Escape"&&modal.classList.contains("is-open")){closeVideo()}});

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuma Saito Portfolio</title>
-  <meta name="description" content="動画制作・映像編集・AI映像制作を行う齋藤のポートフォリオサイトです。" />
+  <meta name="description" content="漫画・イラスト・AIを活用した映像制作を行う齋藤のポートフォリオサイトです。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
       <a class="site-title" href="#">Yuma Saito</a>
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="#profile">プロフィール</a>
-        <a href="#works">制作実績</a>
+        <a href="#services">制作内容</a>
         <a href="#price">料金</a>
         <a href="#contact">問い合わせ</a>
       </nav>
@@ -21,12 +21,19 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="メインビジュアル">
       <div class="hero-visual">
+        <video class="hero-video" autoplay muted loop playsinline poster="images/Motion_c.jpg">
+          <source src="videos/Top_video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
         <div class="hero-copy">
           <p class="hero-label">Video / Motion / AI Creative</p>
           <h1>絵を動かそう、<br />心を動かそう。</h1>
-          <p>教材動画・販促動画・AI映像制作など、目的に合わせた映像表現をお手伝いします。</p>
+          <p>
+            漫画・イラスト・AIを活用し、動きのある映像を制作しています。<br />
+            モーションコミック、AIアニメーション、絵本・子ども向け映像など、見る人に伝わりやすく、心が動くような表現を大切にしています。
+          </p>
         </div>
       </div>
     </section>
@@ -36,37 +43,60 @@
         <div class="profile-text">
           <p class="section-label">Profile</p>
           <h2>プロフィール</h2>
-          <p>動画クリエイターとして、企業向けの動画編集、教材動画、販促動画、モーショングラフィックスなどを制作しています。</p>
-          <p>After EffectsやPremiere Proを使用した編集に加え、近年はAI画像・AI動画を活用した映像表現にも取り組んでいます。</p>
-          <p>見る人に伝わりやすく、依頼者の目的に寄り添った映像づくりを大切にしています。</p>
+          <p>映像制作会社でディレクションから制作まで携わり、Amazon PrimeやAbemaTVにて配信中の作品にも参画しました。</p>
+          <p>現在は、モーションコミック、AIアニメーションを中心に、漫画・イラスト素材を活用した動画や、絵本動画などを制作しています。</p>
+          <p>また、保育・幼児教育の現場で培った経験をもとに、子ども向け・教育向けコンテンツの制作も得意としています。</p>
+          <p>大人にも子どもにも「分かりやすい」「伝わりやすい」映像づくりを大切にしながら、企画の整理から編集・演出・納品まで丁寧に対応します。</p>
         </div>
-        <div class="profile-photo" aria-label="プロフィール写真の仮スペース">
-          <span>Photo</span>
-        </div>
+        <div class="profile-photo" aria-label="プロフィール写真の仮スペース"><span>Photo</span></div>
       </div>
     </section>
 
-    <section id="works" class="section works-section">
+    <section id="services" class="section services-section">
       <div class="container">
-        <p class="section-label">Works</p>
-        <h2>制作実績</h2>
-        <div class="cards">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>教材動画制作</h3>
-            <p>教育コンテンツ向けの構成・編集・演出。内容を分かりやすく整理し、学習しやすい動画に仕上げます。</p>
+        <p class="section-label">Services</p>
+        <h2>主な制作内容</h2>
+        <div class="service-cards">
+          <article class="service-card">
+            <button class="thumb-button" type="button" data-video="videos/Motion_c.mp4" data-title="モーションコミック">
+              <img src="images/Motion_c.jpg" alt="モーションコミックの参考動画サムネイル" />
+              <span class="play-mark">▶</span>
+            </button>
+            <div class="service-body">
+              <span class="card-number">01</span>
+              <h3>モーションコミック</h3>
+              <p>漫画・イラスト素材をもとに、カメラワーク、セリフ、効果音、モーションを加え、物語や感情が伝わる映像に仕上げます。</p>
+              <p class="price-label">70,000円〜</p>
+            </div>
           </article>
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>販促・SNS動画</h3>
-            <p>商品紹介やSNS展開を想定した短尺動画を制作。目的や媒体に合わせて見せ方を調整します。</p>
+
+          <article class="service-card">
+            <button class="thumb-button" type="button" data-video="videos/AI_anime.mp4" data-title="AIアニメーション">
+              <img src="images/AI_anime.jpg" alt="AIアニメーションの参考動画サムネイル" />
+              <span class="play-mark">▶</span>
+            </button>
+            <div class="service-body">
+              <span class="card-number">02</span>
+              <h3>AIアニメーション</h3>
+              <p>AIで生成した画像や動画素材を活用し、短編アニメーションやキャラクター映像などを制作します。企画・絵コンテ・素材整理からご相談可能です。</p>
+              <p class="price-label">50,000円〜</p>
+            </div>
           </article>
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>AI映像制作</h3>
-            <p>AI画像・AI動画を活用した映像表現、短編アニメーション、ビジュアル制作の検証・制作に対応します。</p>
+
+          <article class="service-card">
+            <button class="thumb-button" type="button" data-video="videos/Kids.mp4" data-title="絵本・子ども向け映像">
+              <img src="images/Kids.jpg" alt="絵本・子ども向け映像の参考動画サムネイル" />
+              <span class="play-mark">▶</span>
+            </button>
+            <div class="service-body">
+              <span class="card-number">03</span>
+              <h3>絵本・子ども向け映像</h3>
+              <p>絵本動画、子ども向けコンテンツ、教育現場で使用する映像などを制作します。保育・幼児教育の経験を活かし、子どもにも伝わりやすい表現を大切にしています。</p>
+              <p class="price-label">70,000円〜</p>
+            </div>
           </article>
         </div>
+        <p class="service-note">サムネイルをクリックすると、参考動画をサイト内で再生できます。</p>
       </div>
     </section>
 
@@ -77,13 +107,12 @@
         <div class="price-table-wrap">
           <table>
             <tr><th>内容</th><th>料金目安</th></tr>
-            <tr><td>ショート動画編集</td><td>15,000円〜</td></tr>
-            <tr><td>販促・SNS動画</td><td>30,000円〜</td></tr>
-            <tr><td>教材動画・長尺編集</td><td>50,000円〜</td></tr>
-            <tr><td>AI映像制作</td><td>内容によりご相談</td></tr>
+            <tr><td>モーションコミック</td><td>70,000円〜</td></tr>
+            <tr><td>AIアニメーション</td><td>50,000円〜</td></tr>
+            <tr><td>絵本・子ども向け映像</td><td>70,000円〜</td></tr>
           </table>
         </div>
-        <p class="note">※ご依頼内容・尺・素材量・修正回数によって変動します。内容が固まっていない段階でも、お気軽にご相談ください。</p>
+        <p class="note">※料金は内容・尺・素材量・修正回数・納期によって変動します。内容が固まっていない段階でも、お気軽にご相談ください。</p>
       </div>
     </section>
 
@@ -96,6 +125,15 @@
       </div>
     </section>
   </main>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-bg" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="参考動画">
+      <button class="modal-close" type="button" aria-label="動画を閉じる">×</button>
+      <p class="modal-title" id="modalTitle">参考動画</p>
+      <video id="modalVideo" controls playsinline></video>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-inner">
