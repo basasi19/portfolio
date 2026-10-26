@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20261026" />
 </head>
 <body>
   <header class="site-header">
@@ -17,7 +17,6 @@
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="#profile">Profile</a>
         <a href="#services">Works</a>
-        <a href="#price">Price</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -56,14 +55,8 @@
             <p>
               モーションコミック、AIアニメーション、子ども向け映像など、素材を活用したモーション制作を得意とし、「分かりやすい」「伝わりやすい」映像づくりを大切にしています。
             </p>
-            <p>
-              登録者300万人規模のYouTubeアニメコンテンツ制作にも、継続して携わっています。
-            </p>
-            <div class="platforms">
-              <p class="platforms-label">配信／公開先</p>
-              <p class="platforms-list">Amazon Prime Video ・ ABEMA ・ DMM TV ・ YouTube ・ Udemy</p>
-            </div>
-          </div>          <div class="profile-photo" aria-label="プロフィール写真">
+          </div>
+          <div class="profile-photo" aria-label="プロフィール写真">
             <img src="images/profile.jpg" alt="Yuma Saito プロフィール写真" />
           </div>
         </div>
@@ -83,8 +76,8 @@
 
         <div class="work-list">
           <article class="work-item">
-            <button class="work-thumb" type="button" data-video="videos/Motion_c.mp4" data-title="モーションコミック">
-              <img src="images/Motion_c.jpg" alt="モーションコミックの参考動画サムネイル" />
+            <button class="work-thumb" type="button" data-video="videos/Motion_c.mp4?v=20261026" data-title="モーションコミック">
+              <img src="images/motion-comic-20261026.jpg" alt="モーションコミックの参考動画サムネイル" />
               <span class="play-mark">▶</span>
             </button>
             <div class="work-text">
@@ -95,8 +88,8 @@
           </article>
 
           <article class="work-item reverse">
-            <button class="work-thumb" type="button" data-video="videos/AI_anime.mp4" data-title="AIアニメーション">
-              <img src="images/AI_anime.jpg" alt="AIアニメーションの参考動画サムネイル" />
+            <button class="work-thumb" type="button" data-video="videos/AI_anime.mp4?v=20261026" data-title="AIアニメーション">
+              <img src="images/ai-animation-20261026.jpg" alt="AIアニメーションの参考動画サムネイル" />
               <span class="play-mark">▶</span>
             </button>
             <div class="work-text">
@@ -107,8 +100,8 @@
           </article>
 
           <article class="work-item">
-            <button class="work-thumb" type="button" data-video="videos/book.mp4" data-title="絵本動画">
-              <img src="images/book.jpg" alt="絵本動画の参考動画サムネイル" />
+            <button class="work-thumb" type="button" data-video="videos/book.mp4?v=20261026" data-title="絵本動画">
+              <img src="images/picture-book-20261026.jpg" alt="絵本動画の参考動画サムネイル" />
               <span class="play-mark">▶</span>
             </button>
             <div class="work-text">
@@ -145,52 +138,38 @@
       </div>
     </section>
 
-    <section id="price" class="section price-section">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="small-label">Price</p>
-          <h2>料金目安</h2>
-          <p class="section-lead">
-            内容・尺・素材量・修正回数・納期によって変動します。内容が固まっていない段階でもご相談ください。
-          </p>
-        </div>
-
-        <div class="price-list">
-          <div class="price-row">
-            <span>モーションコミック</span>
-            <strong>30,000円〜</strong>
-          </div>
-          <div class="price-row">
-            <span>AIアニメーション</span>
-            <strong>50,000円〜</strong>
-          </div>
-          <div class="price-row">
-            <span>絵本動画</span>
-            <strong>30,000円〜</strong>
-          </div>
-          <div class="price-row">
-            <span>子ども向け映像</span>
-            <strong>30,000円〜</strong>
-          </div>
-          <div class="price-row">
-            <span>YouTubeコンテンツ</span>
-            <strong>ご相談</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="section contact-section">
       <div class="container narrow">
         <div class="contact-box">
           <p class="small-label">Contact</p>
-          <h2>制作のご相談</h2>
+          <h2>お問い合わせ</h2>
           <p>
-            お見積もり、実績に関するお問い合わせ、制作内容のご相談など、お気軽にご連絡ください。
+            制作のご相談やご質問など、メッセージを自由にお送りください。
           </p>
-          <a class="button" href="https://forms.google.com" target="_blank" rel="noopener">
-            お問い合わせフォームへ
-          </a>
+          <p class="contact-success" id="contactSuccess" role="status" hidden>
+            メッセージを送信しました。お問い合わせありがとうございます。
+          </p>
+          <form class="contact-form" action="https://formsubmit.co/basasi1919@gmail.com" method="POST" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="ポートフォリオサイトからのお問い合わせ" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://basasi19.github.io/portfolio/?message=sent#contact" />
+            <input type="text" name="_honey" class="contact-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-field">
+              <label for="contactName">お名前 <span class="field-note">任意</span></label>
+              <input id="contactName" name="name" type="text" autocomplete="name" maxlength="100" />
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">メールアドレス <span class="field-note">必須</span></label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required />
+            </div>
+            <div class="form-field">
+              <label for="contactMessage">メッセージ <span class="field-note">必須</span></label>
+              <textarea id="contactMessage" name="message" rows="6" maxlength="10000" placeholder="ご相談・ご質問など、お気軽にご記入ください。" required></textarea>
+            </div>
+            <p class="form-note">送信には <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a> を利用します。</p>
+            <button class="button" type="submit">メッセージを送信</button>
+          </form>
+          <p class="contact-email">メールでのご連絡はこちら：<br /><a href="mailto:basasi1919@gmail.com">basasi1919@gmail.com</a></p>
         </div>
       </div>
     </section>
@@ -212,6 +191,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261026"></script>
 </body>
 </html>
