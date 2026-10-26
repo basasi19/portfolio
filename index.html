@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261026" />
+  <link rel="stylesheet" href="style.css?v=20261026b" />
 </head>
 <body>
   <header class="site-header">
@@ -41,7 +41,6 @@
     </section>
 
     <section id="profile" class="section profile-section">
-      <div class="decor decor-profile" aria-hidden="true"></div>
       <div class="container profile-layout">
         <div class="section-heading">
           <p class="small-label">Profile</p>
@@ -64,7 +63,6 @@
     </section>
 
     <section id="services" class="section services-section">
-      <div class="decor decor-services" aria-hidden="true"></div>
       <div class="container">
         <div class="section-heading works-heading">
           <p class="small-label">Works / Services</p>
@@ -76,9 +74,9 @@
 
         <div class="work-list">
           <article class="work-item">
-            <button class="work-thumb" type="button" data-video="videos/Motion_c.mp4?v=20261026" data-title="モーションコミック">
+            <button class="work-thumb" type="button" aria-label="モーションコミックを再生" data-video="videos/Motion_c.mp4?v=20261026" data-title="モーションコミック">
               <img src="images/motion-comic-20261026.jpg" alt="モーションコミックの参考動画サムネイル" />
-              <span class="play-mark">▶</span>
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
             </button>
             <div class="work-text">
               <p class="work-kicker">Motion Comic</p>
@@ -88,9 +86,9 @@
           </article>
 
           <article class="work-item reverse">
-            <button class="work-thumb" type="button" data-video="videos/AI_anime.mp4?v=20261026" data-title="AIアニメーション">
+            <button class="work-thumb" type="button" aria-label="AIアニメーションを再生" data-video="videos/AI_anime.mp4?v=20261026" data-title="AIアニメーション">
               <img src="images/ai-animation-20261026.jpg" alt="AIアニメーションの参考動画サムネイル" />
-              <span class="play-mark">▶</span>
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
             </button>
             <div class="work-text">
               <p class="work-kicker">AI Animation</p>
@@ -100,9 +98,9 @@
           </article>
 
           <article class="work-item">
-            <button class="work-thumb" type="button" data-video="videos/book.mp4?v=20261026" data-title="絵本動画">
+            <button class="work-thumb" type="button" aria-label="絵本動画を再生" data-video="videos/book.mp4?v=20261026" data-title="絵本動画">
               <img src="images/picture-book-20261026.jpg" alt="絵本動画の参考動画サムネイル" />
-              <span class="play-mark">▶</span>
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
             </button>
             <div class="work-text">
               <p class="work-kicker">Picture Book</p>
@@ -112,9 +110,9 @@
           </article>
 
           <article class="work-item reverse">
-            <button class="work-thumb" type="button" data-video="videos/Kids.mp4" data-title="子ども向け映像">
+            <button class="work-thumb" type="button" aria-label="子ども向け映像を再生" data-video="videos/Kids.mp4" data-title="子ども向け映像">
               <img src="images/Kids.jpg" alt="子ども向け映像の参考動画サムネイル" />
-              <span class="play-mark">▶</span>
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
             </button>
             <div class="work-text">
               <p class="work-kicker">Kids</p>
@@ -124,14 +122,50 @@
           </article>
 
           <article class="work-item">
-            <button class="work-thumb" type="button" data-video="videos/youtube.mp4" data-title="YouTubeコンテンツ">
-              <img src="images/youtube.jpg" alt="YouTubeコンテンツの参考動画サムネイル" />
-              <span class="play-mark">▶</span>
+            <button class="work-thumb" type="button" aria-label="YouTubeコンテンツを再生" data-youtube="5Ucw4nnQI88" data-title="YouTubeコンテンツ">
+              <img src="images/youtube-5Ucw4nnQI88.jpg" alt="混血のカレコレ 第5章6話「過ち転じて」の参考動画サムネイル" />
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
             </button>
             <div class="work-text">
               <p class="work-kicker">YouTube</p>
               <h3>YouTubeコンテンツ</h3>
               <p>YouTubeアニメやキャラクター動画など、シリーズ化を想定した映像制作にも対応します。</p>
+            </div>
+          </article>
+
+          <article class="work-item reverse">
+            <button class="work-thumb" type="button" aria-label="教材動画を再生" data-video="videos/educational-video.mp4" data-title="教材動画">
+              <img src="images/educational-video.jpg" alt="講座の図解と講師を組み合わせた教材動画のサムネイル" />
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
+            </button>
+            <div class="work-text">
+              <p class="work-kicker">Educational Video</p>
+              <h3>教材動画</h3>
+              <p>講座やレッスンの内容を、図解やテロップ、見やすい画面構成で分かりやすく伝えます。</p>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <button class="work-thumb" type="button" aria-label="商品紹介を再生" data-video="videos/product-promotion.mp4" data-title="商品紹介">
+              <img src="images/product-promotion.jpg" alt="お酒とガトーショコラを映した商品紹介動画のサムネイル" />
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
+            </button>
+            <div class="work-text">
+              <p class="work-kicker">Product Promotion</p>
+              <h3>商品紹介</h3>
+              <p>商品の特徴や魅力を、映像・テロップ・音の組み合わせで伝える紹介動画を制作します。</p>
+            </div>
+          </article>
+
+          <article class="work-item reverse">
+            <button class="work-thumb" type="button" aria-label="ウェディング・オープニングムービーを再生" data-video="videos/wedding-opening.mp4" data-title="ウェディング・オープニングムービー">
+              <img src="images/wedding-opening.jpg" alt="和装のおふたりを映したウェディング・オープニングムービーのサムネイル" />
+              <span class="play-mark" aria-hidden="true"><span class="play-icon">▶</span> 動画を再生</span>
+            </button>
+            <div class="work-text">
+              <p class="work-kicker">Wedding Opening Movie</p>
+              <h3>ウェディング・<span class="title-phrase">オープニングムービー</span></h3>
+              <p>おふたりの写真や映像に音楽と動きを組み合わせ、披露宴の始まりを彩るオープニングムービーを制作します。</p>
             </div>
           </article>
         </div>
@@ -177,10 +211,14 @@
 
   <div class="modal" id="videoModal" aria-hidden="true">
     <div class="modal-bg" data-close="true"></div>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="参考動画">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" type="button" aria-label="動画を閉じる">×</button>
       <p class="modal-title" id="modalTitle">参考動画</p>
-      <video id="modalVideo" controls playsinline></video>
+      <video id="modalVideo" controls playsinline hidden></video>
+      <div class="youtube-player" id="youtubePlayer" hidden>
+        <iframe id="youtubeFrame" title="YouTubeコンテンツ" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="youtube-fallback"><a id="youtubeLink" href="https://www.youtube.com/watch?v=5Ucw4nnQI88" target="_blank" rel="noopener noreferrer">YouTubeで開く</a></p>
+      </div>
     </div>
   </div>
 
@@ -191,6 +229,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20261026"></script>
+  <script src="script.js?v=20261026b"></script>
 </body>
 </html>
